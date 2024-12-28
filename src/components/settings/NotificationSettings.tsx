@@ -4,7 +4,7 @@ import { Bell, ShoppingCart, AlertTriangle, Package } from 'lucide-react';
 export default function NotificationSettings() {
   return (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
-      <h2 className="text-lg font-semibold mb-4">Notifications</h2>
+      <h2 className="dark:text-blue-500/100 text-lg font-semibold mb-4">Notifications</h2>
       <div className="space-y-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -12,7 +12,7 @@ export default function NotificationSettings() {
               <Bell size={20} />
             </div>
             <div>
-              <p className="font-medium">Push Notifications</p>
+              <p className="dark:text-blue-500/100 font-medium">Push Notifications</p>
               <p className="text-sm text-gray-500 dark:text-gray-400">Enable desktop notifications</p>
             </div>
           </div>
@@ -33,7 +33,7 @@ export default function NotificationSettings() {
               <ShoppingCart size={20} />
             </div>
             <div>
-              <p className="font-medium">Order Updates</p>
+              <p className="dark:text-blue-500/100 font-medium">Order Updates</p>
               <p className="text-sm text-gray-500 dark:text-gray-400">Get notified about new orders</p>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function NotificationSettings() {
               <AlertTriangle size={20} />
             </div>
             <div>
-              <p className="font-medium">Low Stock Alerts</p>
+              <p className="dark:text-blue-500/100 font-medium">Low Stock Alerts</p>
               <p className="text-sm text-gray-500 dark:text-gray-400">Get notified when stock is low</p>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function NotificationSettings() {
               <Package size={20} />
             </div>
             <div>
-              <p className="font-medium">Product Updates</p>
+              <p className="dark:text-blue-500/100 font-medium">Product Updates</p>
               <p className="text-sm text-gray-500 dark:text-gray-400">Get notified about product changes</p>
             </div>
           </div>

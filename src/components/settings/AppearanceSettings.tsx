@@ -10,7 +10,7 @@ export default function AppearanceSettings() {
 
   return (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
-      <h2 className="text-lg font-semibold mb-4">Appearance</h2>
+      <h2 className="text-lg dark:text-blue-500/100 font-semibold mb-4">Appearance</h2>
       <div className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
