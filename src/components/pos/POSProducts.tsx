@@ -8,7 +8,6 @@ export default function POSProducts() {
 
   return (
     <div className="flex-1 bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden flex flex-col">
-      {/* Search Bar */}
       <div className="p-4 border-b border-gray-200 dark:border-gray-700">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
@@ -24,15 +23,10 @@ export default function POSProducts() {
         </div>
       </div>
 
-      {/* Categories */}
       <POSCategories />
 
-      {/* Products Grid */}
       <div className="flex-1 overflow-y-auto p-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-        {/* Dynamically render product cards */}
-        {[...Array(12)].map((_, index) => (
-          <POSProductCard key={index} />
-        ))}
+        <POSProductCard />
       </div>
     </div>
   );
