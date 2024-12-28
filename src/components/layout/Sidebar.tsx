@@ -35,7 +35,7 @@ export default function Sidebar() {
       )}
     >
       {/* Header */}
-      <div className="flex items-center justify-between p-4 border-b dark:border-gray-700 dark:text-indigo-600">
+      <div className="flex h-16 items-center justify-between p-4 border-b dark:border-gray-700 dark:text-indigo-600">
         <h1
           className={cn(
             "font-bold text-lg transition-opacity duration-300",
@@ -46,7 +46,7 @@ export default function Sidebar() {
         </h1>
         <button
           onClick={() => dispatch(toggleSidebar())}
-          className="py-2 px-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
+          className="py-2 px- rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
         >
           <Menu size={20} />
         </button>

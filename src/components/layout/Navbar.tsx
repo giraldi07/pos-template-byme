@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <div className="h-16 bg-white dark:bg-gray-900 shadow-sm flex items-center justify-between px-4 sm:px-6 lg:px-8 transition-colors">
       {/* Search Input */}
-      <div className="flex-1 max-w-xl hidden sm:flex">
+      <div className="flex-1 max-w-xl sm:flex hidden">
         <div className="relative w-full">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500" size={20} />
           <input
