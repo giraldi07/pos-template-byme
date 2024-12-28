@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default light theme colors */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a202c;
+  --border-color: #e2e8f0;
+  --hover-bg-color: #f1f5f9;
+  --primary-color: #0ea5e9;
+}
+
+/* Dark theme colors */
+.dark {
+  --bg-color: #17153B;
+  --text-color: #f7fafc;
+  --border-color: #4a5568;
+  --hover-bg-color: #2d3748;
+  --primary-color: #38bdf8;
+}
