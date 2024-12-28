@@ -13,11 +13,11 @@ export default function ProductHeader() {
           <Plus size={20} />
           <span>Add Product</span>
         </button>
-        <button className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center gap-2">
+        <button className="px-4 py-2 border dark:text-blue-500/100 border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center gap-2">
           <FileDown size={20} />
           <span>Export</span>
         </button>
-        <button className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center gap-2">
+        <button className="px-4 py-2 border dark:text-blue-500/100 border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center gap-2">
           <FileUp size={20} />
           <span>Import</span>
         </button>

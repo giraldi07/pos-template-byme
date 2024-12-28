@@ -14,7 +14,7 @@ export default function ReportHeader() {
           <Calendar size={20} />
           <span>Last 30 Days</span>
         </button>
-        <button className="px-4 py-2 bg-blue-600 text-white rounded-lg 
+        <button className="px-4 py-2 dark:text-blue-500/100 bg-blue-600 text-white rounded-lg 
                        hover:bg-blue-700 flex items-center gap-2">
           <FileDown size={20} />
           <span>Export</span>

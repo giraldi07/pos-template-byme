@@ -23,7 +23,7 @@ export default function ProductListFilters() {
             <option value="electronics">Electronics</option>
             <option value="appliances">Appliances</option>
           </select>
-          <button className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg 
+          <button className="px-4 dark:text-blue-500/100 py-2 border border-gray-300 dark:border-gray-700 rounded-lg 
                            hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center gap-2">
             <Filter size={20} />
             <span>Filters</span>

@@ -106,11 +106,11 @@ export default function Dashboard() {
         {stats.map((stat) => (
           <div
             key={stat.title}
-            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm"
+            className="bg-white dark:bg-sky-950 p-6 rounded-lg shadow-sm"
           >
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{stat.title}</p>
+                <p className="text-sm text-gray-500 dark:text-blue-500/100">{stat.title}</p>
                 <p className="text-2xl font-semibold mt-1 text-gray-800 dark:text-white">{stat.value}</p>
               </div>
               <div className={`p-3 rounded-full ${
@@ -132,11 +132,11 @@ export default function Dashboard() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <div className="lg:col-span-2 bg-white  dark:bg-slate-100 p-6 rounded-lg shadow-sm">
           <Line data={chartData} options={chartOptions} />
         </div>
         
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <div className="bg-white dark:bg-indigo-600 p-6 rounded-lg shadow-sm">
           <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-white">Recent Sales</h3>
           <div className="space-y-4">
             {[1, 2, 3, 4, 5].map((_, index) => (

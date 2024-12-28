@@ -21,7 +21,7 @@ export default function CustomerListFilters() {
             <option value="month">This Month</option>
             <option value="year">This Year</option>
           </select>
-          <button className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center gap-2">
+          <button className="dark:text-blue-500/100 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg  flex items-center gap-2">
             <Filter size={20} />
             <span>Filters</span>
           </button>

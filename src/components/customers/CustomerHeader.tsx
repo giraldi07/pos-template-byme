@@ -13,11 +13,11 @@ export default function CustomerHeader() {
           <UserPlus size={20} />
           <span>Add Customer</span>
         </button>
-        <button className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center gap-2">
+        <button className="px-4 py-2 border border-gray-300 dark:text-blue-500/100 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center gap-2">
           <FileDown size={20} />
           <span>Export</span>
         </button>
-        <button className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center gap-2">
+        <button className="px-4 py-2 border border-gray-300 dark:text-blue-500/100 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center gap-2">
           <FileUp size={20} />
           <span>Import</span>
         </button>
