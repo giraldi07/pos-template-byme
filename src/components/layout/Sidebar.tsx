@@ -46,7 +46,7 @@ export default function Sidebar() {
         </h1>
         <button
           onClick={() => dispatch(toggleSidebar())}
-          className="py-2 px- rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
+          className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
         >
           <Menu size={20} />
         </button>
