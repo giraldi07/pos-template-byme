@@ -1,4 +1,3 @@
-import React from 'react';
 import { Plus } from 'lucide-react';
 
 export default function POSProductCard() {
@@ -88,32 +87,22 @@ export default function POSProductCard() {
   return (
     <>
       {products.map((product) => (
-        <div
+        <button
           key={product.id}
-          className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 ease-in-out
-                   flex flex-col items-center text-center group max-w-xs w-full sm:max-w-sm lg:max-w-md"
+          className="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm hover:shadow-md 
+                   transition-shadow duration-200 flex flex-col items-center text-center"
         >
-          {/* Product Image */}
-          <div className="relative w-full h-48 mb-4 overflow-hidden rounded-lg">
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-          {/* Product Name */}
-          <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2 text-lg sm:text-xl">{product.name}</h3>
-          {/* Category */}
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">{product.category}</p>
-          {/* Description */}
-          <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm sm:text-base">{product.description}</p>
-          {/* Price */}
-          <p className="text-blue-600 dark:text-blue-400 font-semibold mb-4 text-lg sm:text-xl">${product.price}</p>
-          {/* Add to Cart Button */}
-          <div className="mt-3 p-3 rounded-full bg-blue-600 text-white shadow-md hover:bg-blue-700 transition-colors duration-300 ease-in-out">
+          <img
+            src={product.image}
+            alt={product.name}
+            className="w-full h-32 object-cover rounded-lg mb-3"
+          />
+          <h3 className="font-medium text-gray-900 dark:text-gray-100 mb-1">{product.name}</h3>
+          <p className="text-blue-600 dark:text-blue-400 font-semibold">${product.price}</p>
+          <div className="mt-2 p-1 rounded-full bg-blue-600 text-white">
             <Plus size={18} />
           </div>
-        </div>
+        </button>
       ))}
     </>
   );
