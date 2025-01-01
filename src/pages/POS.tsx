@@ -1,4 +1,3 @@
-import React from 'react';
 import POSCart from '../components/pos/POSCart';
 import POSProducts from '../components/pos/POSProducts';
 

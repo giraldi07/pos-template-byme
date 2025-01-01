@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import {
@@ -8,7 +7,8 @@ import {
   ShoppingCart,
   BarChart,
   Settings,
-  Menu
+  Menu,
+  DollarSign, // Menambahkan ikon untuk Sale
 } from 'lucide-react';
 import { toggleSidebar } from '../../store/slices/uiSlice';
 import { RootState } from '../../store';
@@ -20,6 +20,7 @@ const navigation = [
   { name: 'Customers', icon: Users, path: '/customers' },
   { name: 'POS', icon: ShoppingCart, path: '/pos' },
   { name: 'Reports', icon: BarChart, path: '/reports' },
+  { name: 'Sale', icon: DollarSign, path: '/sale' }, // Menambahkan Sale
   { name: 'Settings', icon: Settings, path: '/settings' },
 ];
 
@@ -71,7 +72,7 @@ export default function Sidebar() {
             <span
               className={cn(
                 "transition-opacity duration-300", "shadow-black",
-                isOpen ? "opacity-100" : "opacity-0 hidden" 
+                isOpen ? "opacity-100" : "opacity-0 hidden"
               )}
             >
               {item.name}

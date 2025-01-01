@@ -1,4 +1,3 @@
-import React from 'react';
 import { Minus, Plus, X } from 'lucide-react';
 
 export default function POSCartItem() {

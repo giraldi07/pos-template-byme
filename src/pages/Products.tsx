@@ -1,4 +1,3 @@
-import React from 'react';
 import ProductList from '../components/products/ProductList';
 import ProductHeader from '../components/products/ProductHeader';
 
