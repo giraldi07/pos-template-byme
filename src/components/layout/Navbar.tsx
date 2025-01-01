@@ -1,4 +1,3 @@
-import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Search, Bell, User, Sun, Moon } from 'lucide-react';
 import { toggleTheme } from '../../store/slices/uiSlice';
@@ -11,7 +10,7 @@ export default function Navbar() {
 
   return (
     <div className="h-16 bg-white dark:bg-gray-900 shadow-sm flex items-center justify-between px-4 sm:px-6 lg:px-8 transition-colors border-b dark:border-gray-700">
-      {/* Search Input */}
+      {/* Search Input (Only visible on larger screens) */}
       <div className="flex-1 max-w-xl sm:flex hidden">
         <div className="relative w-full">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500" size={20} />
@@ -25,9 +24,16 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Search Toggle - Visible only on mobile screens */}
+      <div className="sm:hidden flex items-center">
+        <button className="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+          <Search size={20} className="text-gray-600 dark:text-gray-300" />
+        </button>
+      </div>
+
       {/* Action Buttons */}
       <div className="flex items-center space-x-4">
-        {/* Offline Mode Indicator */}
+        {/* Offline Mode Indicator (Visible only on larger screens) */}
         {isOffline && (
           <span className="text-red-500 text-sm hidden sm:inline-block">Offline Mode</span>
         )}
