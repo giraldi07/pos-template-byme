@@ -7,11 +7,12 @@ export default function Navbar() {
   const dispatch = useDispatch();
   const theme = useSelector((state: RootState) => state.ui.theme);
   const isOffline = useSelector((state: RootState) => state.ui.isOffline);
+  const sidebarOpen = useSelector((state: RootState) => state.ui.sidebarOpen); // Ambil status sidebar
 
   return (
-    <div className="h-16 bg-white dark:bg-gray-900 shadow-sm flex items-center justify-between px-4 sm:px-6 lg:px-8 transition-colors border-b dark:border-gray-700">
+    <div className="h-16 bg-white dark:bg-gray-900 shadow-sm flex items-center justify-between px-4 sm:px-6 lg:px-8 transition-colors border-b dark:border-gray-700 fixed w-full top-0 left-0 z-10">
       {/* Search Input (Only visible on larger screens) */}
-      <div className="flex-1 max-w-xl sm:flex hidden">
+      <div className={`flex-1 max-w-xl sm:flex  ${sidebarOpen ? 'ml-64' : 'ml-20'}`}> {/* Margin dinamis berdasarkan sidebarOpen */}
         <div className="relative w-full">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500" size={20} />
           <input
@@ -25,7 +26,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Search Toggle - Visible only on mobile screens */}
-      <div className="sm:hidden flex items-center">
+      <div className="sm:hidden flex items-center ml-4">
         <button className="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
           <Search size={20} className="text-gray-600 dark:text-gray-300" />
         </button>

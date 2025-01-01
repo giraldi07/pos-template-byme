@@ -35,7 +35,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Navbar />
 
         {/* Konten utama */}
-        <main className="p-6">
+        <main className="p-6 mt-16"> {/* Tambahkan margin top agar konten tidak tertutup navbar */}
           {children}
         </main>
       </div>
