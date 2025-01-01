@@ -16,7 +16,7 @@ interface SaleListProps {
 
 export default function SaleList({ sales, onEdit, onDelete }: SaleListProps) {
   return (
-    <div className="p-4 space-y-6">
+    <div className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {sales.map((sale, index) => (
         <div key={index} className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg space-y-4">
           <div className="flex justify-between items-center">
